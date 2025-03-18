@@ -14,6 +14,10 @@ from langchain_core.runnables.history import RunnableWithMessageHistory
 
 import os
 
+__import__('pysqlite3')
+import sys
+sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
+
 llm = ChatGoogleGenerativeAI(
     model="gemini-1.5-pro-latest", google_api_key="AIzaSyAN-FFQRAJLi4l2FoobGaNLGwp_cRv77i4"
 )

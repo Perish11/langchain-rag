@@ -14,8 +14,6 @@ from langchain_core.runnables.history import RunnableWithMessageHistory
 
 import os
 
-GOOGLE_GEMINI_KEY = config("GOOGLE_GEMINI_KEY")
-
 llm = ChatGoogleGenerativeAI(
     model="gemini-1.5-pro-latest", google_api_key="AIzaSyAN-FFQRAJLi4l2FoobGaNLGwp_cRv77i4"
 )

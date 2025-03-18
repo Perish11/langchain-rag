@@ -81,7 +81,7 @@ def process_file(file):
         )
         chunks = text_splitter.split_documents(docs)
         embeddings = GoogleGenerativeAIEmbeddings(
-            google_api_key=GOOGLE_GEMINI_KEY, model="models/embedding-001"
+            google_api_key="AIzaSyAN-FFQRAJLi4l2FoobGaNLGwp_cRv77i4", model="models/embedding-001"
         )
         vector_store = Chroma.from_documents(chunks, embeddings)
         retriever = vector_store.as_retriever()

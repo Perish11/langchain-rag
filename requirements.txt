@@ -1,7 +1,7 @@
-langchain == 0.2.12
-langchain-Chroma
+langchain==0.2.12
+langchain-chroma==0.2.12
 python-decouple==3.8
-langchain-google-genai
+langchain-google-genai==0.1.3
 langchain-openai==0.1.7
 streamlit==1.37.1
 wikipedia==1.4.0
@@ -11,5 +11,5 @@ chromadb==0.5.5
 pypdf==4.2.0
 docx2txt==0.8
 youtube-transcript-api==0.6.2
-langchain_community==0.2.11
-pysqlite3-binary==0.5.3
+langchain-community==0.2.11
+pysqlite3-binary==0.5.7  # 升级到最新版本

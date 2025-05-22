@@ -19,7 +19,7 @@ import sys
 sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
 
 llm = ChatGoogleGenerativeAI(
-    model="gemini-2.0-flash", google_api_key="AIzaSyAsZXgnL9_J6k4F6Ajlkj6UqCfys29btvE"
+    model="gemini-2.0-flash", google_api_key="AIzaSyBmifwwX9LVfd2nL5K4hr46qvtGReEUBZg"
 )
 
 contextualize_system_prompt = """Given a chat history and the latest user question \
@@ -85,7 +85,7 @@ def process_file(file):
         )
         chunks = text_splitter.split_documents(docs)
         embeddings = GoogleGenerativeAIEmbeddings(
-            google_api_key="AIzaSyAsZXgnL9_J6k4F6Ajlkj6UqCfys29btvE", model="models/embedding-001"
+            google_api_key="AIzaSyBmifwwX9LVfd2nL5K4hr46qvtGReEUBZg", model="models/embedding-001"
         )
         vector_store = Chroma.from_documents(chunks, embeddings)
         retriever = vector_store.as_retriever()

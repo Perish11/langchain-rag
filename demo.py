@@ -19,7 +19,7 @@ import sys
 sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
 
 llm = ChatGoogleGenerativeAI(
-    model="gemini-1.5-pro-latest", google_api_key="AIzaSyAsZXgnL9_J6k4F6Ajlkj6UqCfys29btvE"
+    model="gemini-2.0-flash", google_api_key="AIzaSyAsZXgnL9_J6k4F6Ajlkj6UqCfys29btvE"
 )
 
 contextualize_system_prompt = """Given a chat history and the latest user question \
